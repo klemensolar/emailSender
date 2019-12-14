@@ -111,7 +111,7 @@ public class GmailRandomSender {
         for (Map.Entry<String, String> entry : secretSantaMap.entrySet()) {
             String santa = entry.getKey();
             String to = entry.getValue();
-            String bodyText = "Tvoj secret santa:" + santa + " Ne pozabi, da je limit 20€. Have fun, Secret santa";
+            String bodyText = "Tvoj secret santa:" + santa + " Ne pozabi, da je limit 20â‚¬. Have fun, Secret santa";
             MimeMessage emailContent;
             try {
                 emailContent = SendEmail.createEmail(to, from, subject, bodyText);
@@ -137,13 +137,6 @@ public class GmailRandomSender {
     private static Map<String, String> createMap() {
         Map<String, String> map = new HashMap<>();
         map.put("Klemen", "klemen.solar@gmail.com");
-        map.put("Tadeja", "tadeja.marn@gmail.com");
-        map.put("Matjaz", "matjaz.vogrin@gmail.com");
-        map.put("Damjana", "damjana_zajec@yahoo.com");
-        map.put("Miro", "miro.drca1978@gmail.com");
-        map.put("Mojca", "mojca.drca@gmail.com");
-        map.put("Primoz", "primoz.cerar1@gmail.com");
-        map.put("Ann", "ratsamee.cerar@gmail.com");
 
         return map;
     }
